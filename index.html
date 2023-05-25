@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find Sylvester</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style\reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" media="all"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header class="the-header header-one">
+        <div>
+            <div class="ham" onclick="openNav()">&#9776;</div>
+        </div>
+    </header>
+
+    <section id="the-hero">
+        <div>
+            <h1 class="hero-heading">Hello, I'm <span>Sylvester Samuel.</span></h1>
+            <p class="hero-text">I'm a Front-End Web Developer.</p>
+            <a class="hero-cta" href="#project">view my work</a>
+        </div>
+    </section>
+
+    <header class="the-header header-two">
+        <div>
+            <nav class="nav">
+                <a href="#the-hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#project" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-1">
+            <div class="about-1-1">
+                <div class="about-1-1-1">
+                    <div class="hexagon">
+                        <i class="mdi mdi-speedometer"></i>
+                    </div>
+                    <h3>Fast</h3>
+                    <p class="web-info">Fast load times and lag free interaction. my highest priority.</p>
+                </div>
+                <div class="about-1-1-1">
+                    <div class="hexagon">
+                        <i class="mdi mdi-lightbulb-outline"></i>
+                    </div>
+                    <h3>Intuitive</h3>
+                    <p class="web-info">Strong preference for easy to use. intuitive UX/UI.</p>
+                </div>
+            </div>
+            <div class="about-1-2">
+                <div class="about-1-2-1">
+                    <div class="hexagon">
+                        <i class="mdi mdi-cellphone-link"></i>
+                    </div>
+                    <h3>Responsive</h3>
+                    <p class="web-info">My layouts will work on any device. big or small</p>
+                </div>
+                <div class="about-1-2-1">
+                    <div class="hexagon">
+                        <i class="mdi mdi-rocket"></i>
+                    </div>
+                    <h3>Dynamic</h3>
+                    <p class="web-info">Websites don't have to be static. I love making pages come to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills">
+            <div class="skills-1">
+                <div class="image-hex">
+
+                    <div class="hex-background">
+                        <img src="./images/myimg.jpg" alt="my-photo">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>contact</h2>
+        <p>Have a question or want to work together?</p>
+        <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST" id="form1" required>
+                <input type="hidden" name="access_key" value="b6765cfb-a7aa-481a-9aa9-cbe85e27905d">
+                <div class="row ">
+                    <div class="col-25">
+                        <label for="fname"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Your Name.." minlength="4"
+                            pattern="[a-zA-Z0-9 ]+" size="10" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Enter Email.."
+                            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required>
+                    </div>
+                </div>
+                <div class="row message">
+                    <div class="col-25">
+                        <label for="message"></label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" placeholder=" Send a Message.."></textarea>
+                    </div>
+                </div>
+                <div class="row submit">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
