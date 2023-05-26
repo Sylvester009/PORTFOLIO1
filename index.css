@@ -182,7 +182,7 @@ h3 {
 }
 
 #skills {
-  padding: 50px 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
@@ -193,10 +193,12 @@ h3 {
 
 .skills-1 {
   display: inline-block;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .hex-background img {
-  width: 90%;
+  width: 289px;
   height: 100%;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   border: #08e5ec solid 2px;
@@ -219,6 +221,89 @@ h3 {
 .skills-1 span {
   color: #04c2c9;
   font-size: 18px;
+}
+
+.skill-2 {
+  line-height: 11pt;
+  display: flex block;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  width: calc(100% - 15px);
+  max-height: 100%;
+  text-align: center;
+  margin: 50px auto 0 auto;
+}
+
+.bar-1 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  color: #666;
+  font-size: 7pt;
+  height: 25px;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+
+.bar-2 {
+  width: 85%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #00a1a7;
+  opacity: 1;
+  padding: 0;
+  color: #666;
+  font-size: 7pt;
+  height: 25px;
+  margin: 0 0 12px 0;
+  transition: 1.1s 0.2s width ease-in-out;
+}
+
+.b2 {
+  width: 90%;
+}
+
+.b3 {
+  width: 73%;
+}
+
+.b4 {
+  width: 45%;
+}
+
+.b5 {
+  width: 80%;
+}
+
+.b6 {
+  width: 62%;
+}
+
+.bar-3 {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #04c2c9;
+  color: #fff;
+  height: 100%;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: medium;
+}
+
+.bar-1 span {
+  padding: 0 15px 0 0;
+  z-index: 1;
+  color: #666;
+  font-size: 7pt;
+  display: none;
 }
 
 #contact {
@@ -301,6 +386,29 @@ input[type="submit"]:where(:hover, :focus-visible) {
   background-color: #04c2c9;
 }
 
+@media (min-width: 600px) {
+  .bar-1 {
+    font-size: 11pt;
+    height: 30px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .bar-2 {
+    height: 30px;
+  }
+
+  .bar-3 {
+    width: 110px;
+  }
+
+  .bar-1 span {
+    display: initial;
+    font-size: medium;
+  }
+}
+
 @media (min-width: 640px) {
   .hero-heading {
     font-size: 60px;
@@ -365,6 +473,22 @@ input[type="submit"]:where(:hover, :focus-visible) {
 @media (min-width: 800px) {
   .submit {
     margin-left: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .skills {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .skill-2 {
+    margin: 90px auto 0px;
+  }
+
+  .bar-1 {
+    max-width: 90%;
   }
 }
 
