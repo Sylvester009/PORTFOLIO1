@@ -144,8 +144,7 @@ html {
   color: red;
 }
 
-.sidenav a:where(:hover, :focus-visible),
-.offcanvas a:where(:hover, :focus-visible) {
+.sidenav a:where(:hover, :focus-visible) {
   color: yellow;
 }
 /*about*/
