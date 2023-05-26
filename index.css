@@ -51,7 +51,7 @@ html {
   background: transparent;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 12px 40px;
+  padding: 12px 30px;
   font-size: 100%;
   margin-top: 30px;
   display: inline-block;
@@ -60,6 +60,10 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
   -webkit-user-select: none;
   user-select: none;
+}
+
+.hero-cta i{
+  margin-left: 15px;
 }
 
 .hero-cta:where(:hover, :focus-visible) {
@@ -113,6 +117,37 @@ html {
   margin-left: 90%;
 }
 
+.sidenav {
+  height: 220px;
+  background: #333;
+  max-width: 1200px;
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 63px;
+  transition: height 0.3s ease-out;
+  width: 100%;
+  left: 0;
+}
+
+.sidenav a {
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  font-size: 13pt;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  padding: 15px  30px 10px;
+}
+
+.nav-link:where(:active) {
+  color: red;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: yellow;
+}
 /*about*/
 #about {
   text-align: center;

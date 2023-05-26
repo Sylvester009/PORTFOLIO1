@@ -15,6 +15,15 @@
 <body>
     <header class="the-header header-one">
         <div>
+            <div id="mySidenav" class="sidenav animate__animated animate__fadeInDownBig">
+                <nav>
+                    <a href="#the-hero" class="nav-link" onclick="closeNav()">Home</a>
+                    <a href="#about" class="nav-link" onclick="closeNav()">About</a>
+                    <a href="#project" class="nav-link" onclick="closeNav()">Projects</a>
+                    <a href="#contact" class="nav-link" onclick="closeNav()">Contact</a>
+                </nav>
+            </div>
+
             <div class="ham" onclick="openNav()">&#9776;</div>
         </div>
     </header>
@@ -23,7 +32,8 @@
         <div>
             <h1 class="hero-heading">Hello, I'm <span>Sylvester Samuel.</span></h1>
             <p class="hero-text">I'm a Front-End Web Developer.</p>
-            <a class="hero-cta" href="#project">view my work</a>
+            <a class="hero-cta" href="#the-hero">view my work <i class="mdi mdi-arrow-right"></i>
+            </a>
         </div>
     </section>
 
@@ -200,6 +210,8 @@
             </form>
         </div>
     </section>
+
+    <script src="./index.js"></script>
 
 </body>
 
