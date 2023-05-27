@@ -12,7 +12,7 @@ html {
 #the-hero {
   display: flex;
   align-items: center;
-  background: url("./images/canvas.png") center / cover no-repeat;
+  background: #252934 url("./images/canvas.png") center / cover no-repeat;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -69,7 +69,7 @@ html {
 .hero-cta:where(:hover, :focus-visible) {
   background-color: #04c2c9;
   border-color: #04c2c9;
-  transition: all 0.5s ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 /*nav*/
@@ -167,6 +167,7 @@ h2 {
 .about-1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .about-1-1,
@@ -187,7 +188,7 @@ h2 {
 }
 
 .hexagon {
-  background-color: #04c2c9;
+  background-color: #199a9f;
   width: var(--s);
   margin: var(--m);
   height: calc(var(--s) * 1.1547);
@@ -253,7 +254,7 @@ h3 {
 }
 
 .skills-1 span {
-  color: #04c2c9;
+  color: #078388;
   font-size: 18px;
 }
 
@@ -276,10 +277,12 @@ h3 {
   justify-content: center;
   background-color: #eee;
   color: #666;
-  font-size: 7pt;
+  font-size: 3pt;
+  font-weight: 600;
   height: 25px;
   margin: 0 0 12px 0;
   position: relative;
+  text-transform: uppercase;
 }
 
 .bar-2 {
@@ -287,7 +290,7 @@ h3 {
   left: 0;
   position: absolute;
   top: 0;
-  background-color: #00a1a7;
+  background-color: #04c2c9;
   opacity: 1;
   padding: 0;
   color: #666;
@@ -321,10 +324,10 @@ h3 {
   left: 0;
   position: absolute;
   top: 0;
-  background-color: #04c2c9;
+  background-color: #0f7c80;
   color: #fff;
   height: 100%;
-  width: 90px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +428,6 @@ input[type="submit"]:where(:hover, :focus-visible) {
     font-size: 11pt;
     height: 30px;
     margin: 0 0 15px 0;
-    text-transform: uppercase;
     font-weight: 400;
   }
 
