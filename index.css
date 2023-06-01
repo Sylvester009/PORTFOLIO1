@@ -125,7 +125,8 @@ html {
   display: none;
   position: absolute;
   top: 63px;
-  transition: height 50ms ease-out;
+  transition-duration: 0s;
+  transition-delay: 0s;
   width: 100%;
   left: 0;
 }
@@ -341,6 +342,54 @@ h3 {
   color: #666;
   font-size: 7pt;
   display: none;
+}
+
+#project {
+  margin: 70px auto;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  padding: 50px;
+  gap: 25px;
+}
+
+.project-1 {
+  width: 100%;
+  align-self: center;
+}
+
+.project-1 a {
+  font-size: 20px;
+  color: #078388;
+  font-weight: 500;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.project-1 p {
+  max-width: 500px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.project-2 {
+  width: 100%;
+}
+
+.project-2 img {
+  border-radius: 25px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+hr {
+  border: solid 1px #0f7c80;
+  width: 80%;
 }
 
 #contact {
@@ -578,6 +627,10 @@ input[type="submit"]:where(:hover, :focus-visible) {
   }
 
   .about-1 {
+    flex-direction: row;
+  }
+
+  .project {
     flex-direction: row;
   }
 }
